@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "cornucopia:block/maple_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "cornucopia:block/maple_log"
+    },
+    "axis=z": {
+      "model": "cornucopia:block/maple_log_horizontal",
+      "x": 90
+    }
+  }
+}

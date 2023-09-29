@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "has_can": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornucopia:can"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "cornucopia:textures/item/can.png",
+    "description": {
+      "text": "I 'can't make jokes anymore"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "cornucopia:can"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Can"
+    }
+  },
+  "requirements": [
+    [
+      "has_can"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "cornucopia:cornucopia",
+  "criteria": {
+    "has_canned_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "cornucopia:canned_pumpkin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "text": "I'd make a bad joke here but idk if I 'can'"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "cornucopia:canned_pumpkin"
+    },
+    "show_toast": true,
+    "title": {
+      "text": "Canned"
+    }
+  },
+  "requirements": [
+    [
+      "has_canned_pumpkin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
