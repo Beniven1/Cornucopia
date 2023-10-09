@@ -32,17 +32,13 @@ public class ConfiguredFeaturesInit {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MAPLE_KEY = registerKey("maple");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
-        RuleTest stoneReplaceabeles = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
-        RuleTest deepslateReplaceabeles = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        RuleTest netherrackReplaceabeles = new BlockMatchTest(Blocks.NETHERRACK);
-        RuleTest endReplaceabeles = new BlockMatchTest(Blocks.END_STONE);
 
         register(context, MAPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(BlockInit.MAPLE_LOG.get()),
-                new MapleTrunkPlacer(5, 4, 3),
+                new MapleTrunkPlacer(4, 2, 0),
                 BlockStateProvider.simple(BlockInit.MAPLE_LEAVES.get()),
-                new MapleFoliagePlacer(ConstantInt.of(3), ConstantInt.of(2), 3),
-                new TwoLayersFeatureSize(1, 0, 2)).dirt(BlockStateProvider.simple(Blocks.END_STONE)).build());
+                new MapleFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
+                new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).build());
     }
 
 

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "cornucopia:pumpkiln_bricks"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "count": 9,
+    "item": "cornucopia:chiseled_pumpkiln_bricks"
+  },
+  "show_notification": true
+}

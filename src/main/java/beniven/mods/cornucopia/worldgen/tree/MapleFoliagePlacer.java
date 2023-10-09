@@ -32,7 +32,7 @@ public class MapleFoliagePlacer extends FoliagePlacer {
 
         // tryPlaceLeaf() // places one leave at given position!
         for(int i = 0; i < 4; i++) {
-            this.placeLeavesRow(pLevel, foliageSetter, pRandom, pConfig, attachment.pos().above(i), 2, i + 1, attachment.doubleTrunk());
+            this.placeLeavesRow(pLevel, foliageSetter, pRandom, pConfig, attachment.pos().above(i), 2, i + 0, attachment.doubleTrunk());
         }
     }
 

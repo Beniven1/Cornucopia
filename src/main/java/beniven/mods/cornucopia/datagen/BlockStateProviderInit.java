@@ -22,7 +22,16 @@ public class BlockStateProviderInit extends BlockStateProvider {
         saplingBlock(BlockInit.MAPLE_SAPLING);
         leavesBlock(BlockInit.MAPLE_LEAVES);
         logBlock(((RotatedPillarBlock) BlockInit.STRIPPED_MAPLE_LOG.get()));
-        cubeAll((BlockInit.MAPLE_PLANKS.get()));
+        blockWithItem(BlockInit.MAPLE_PLANKS);
+        blockWithItem(BlockInit.PUMPKILN_BRICKS);
+        blockWithItem(BlockInit.CHISELED_PUMPKILN_BRICKS);
+        blockWithItem(BlockInit.CRACKED_PUMPKILN_BRICKS);
+        blockWithItem(BlockInit.MOLDY_PUMPKILN_BRICKS);
+        blockWithItem(BlockInit.MOSSY_PUMPKILN_BRICKS);
+        blockWithItem(BlockInit.SMOOTH_PUMPKILN_BRICKS);
+
+        blockItem(BlockInit.MAPLE_LOG);
+        blockItem(BlockInit.STRIPPED_MAPLE_LOG);
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

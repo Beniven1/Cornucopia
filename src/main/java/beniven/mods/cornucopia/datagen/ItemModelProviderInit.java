@@ -1,4 +1,5 @@
 package beniven.mods.cornucopia.datagen;
+import beniven.mods.cornucopia.blocks.BlockInit;
 import beniven.mods.cornucopia.cornucopia;
 import beniven.mods.cornucopia.items.ItemInit;
 import net.minecraft.data.PackOutput;
@@ -20,6 +21,29 @@ public class ItemModelProviderInit extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ItemInit.CAN);
         simpleItem(ItemInit.CANNED_PUMPKIN);
+        simpleItem(ItemInit.CANNED_APPLE);
+        simpleItem(ItemInit.APPLE_PIE);
+        simpleItem(ItemInit.CANNED_MELON);
+        simpleItem(ItemInit.MELON_PIE);
+        simpleItem(ItemInit.CORNUCOPIA);
+        simpleItem(ItemInit.CORNUCOPIA_CANNON);
+        simpleBlockItem(BlockInit.MAPLE_PLANKS);
+        simpleBlockItem(BlockInit.MAPLE_LOG);
+        simpleBlockItem(BlockInit.STRIPPED_MAPLE_LOG);
+        simpleItemLikeBlock(BlockInit.MAPLE_SAPLING);
+        simpleBlockItem(BlockInit.PUMPKILN_BRICKS);
+        simpleBlockItem(BlockInit.CHISELED_PUMPKILN_BRICKS);
+        simpleBlockItem(BlockInit.MOLDY_PUMPKILN_BRICKS);
+        simpleBlockItem(BlockInit.MOSSY_PUMPKILN_BRICKS);
+        simpleBlockItem(BlockInit.CRACKED_PUMPKILN_BRICKS);
+        simpleBlockItem(BlockInit.SMOOTH_PUMPKILN_BRICKS);
+
+        handheldItem(ItemInit.PUMPKILN_SWORD);
+        handheldItem(ItemInit.PUMPKILN_GREAT_SWORD);
+        handheldItem(ItemInit.PUMPKILN_PICKAXE);
+        handheldItem(ItemInit.PUMPKILN_SHOVEL);
+        handheldItem(ItemInit.PUMPKILN_AXE);
+        handheldItem(ItemInit.PUMPKILN_HOE);
     }
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
@@ -56,13 +80,17 @@ public class ItemModelProviderInit extends ItemModelProvider {
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(cornucopia.MODID,"item/" + item.getId().getPath()));
+                new ResourceLocation(cornucopia.MODID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(cornucopia.MODID,"item/" + item.getId().getPath()));
+    }
+    private ItemModelBuilder simpleItemLikeBlock(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(cornucopia.MODID,"block/" + item.getId().getPath()));
     }
 }

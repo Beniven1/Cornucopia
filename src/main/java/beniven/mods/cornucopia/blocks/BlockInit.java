@@ -71,6 +71,24 @@ public class BlockInit {
                 }
             });
 
+    public static final RegistryObject<Block> PUMPKILN_BRICKS = registerBlock("pumpkiln_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS)));
+
+    public static final RegistryObject<Block> CHISELED_PUMPKILN_BRICKS = registerBlock("chiseled_pumpkiln_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CHISELED_STONE_BRICKS)));
+
+    public static final RegistryObject<Block> CRACKED_PUMPKILN_BRICKS = registerBlock("cracked_pumpkiln_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CRACKED_STONE_BRICKS)));
+
+    public static final RegistryObject<Block> MOLDY_PUMPKILN_BRICKS = registerBlock("moldy_pumpkiln_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_STONE_BRICKS)));
+
+    public static final RegistryObject<Block> MOSSY_PUMPKILN_BRICKS = registerBlock("mossy_pumpkiln_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSSY_STONE_BRICKS)));
+
+    public static final RegistryObject<Block> SMOOTH_PUMPKILN_BRICKS = registerBlock("smooth_pumpkiln_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

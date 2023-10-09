@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "cornucopia:pumpkiln_bricks"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " A ",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "item": "cornucopia:pumpkiln_shovel"
+  },
+  "show_notification": true
+}

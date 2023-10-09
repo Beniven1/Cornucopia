@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "cornucopia:pumpkiln_bricks"
+    },
+    "B": {
+      "item": "cornucopia:maple_log"
+    }
+  },
+  "pattern": [
+    " A ",
+    " A ",
+    "ABA"
+  ],
+  "result": {
+    "item": "cornucopia:pumpkiln_great_sword"
+  },
+  "show_notification": true
+}

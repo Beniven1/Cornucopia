@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "cornucopia:pumpkiln_bricks"
+    }
+  ],
+  "result": {
+    "item": "cornucopia:cracked_pumpkiln_bricks"
+  }
+}

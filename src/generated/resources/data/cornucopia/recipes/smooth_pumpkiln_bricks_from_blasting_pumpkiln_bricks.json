@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "smooth_pumpkiln",
+  "ingredient": {
+    "item": "cornucopia:pumpkiln_bricks"
+  },
+  "result": "cornucopia:smooth_pumpkiln_bricks"
+}

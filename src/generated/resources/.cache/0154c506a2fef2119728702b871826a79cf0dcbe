@@ -1,0 +1,5 @@
+// 1.20.1	2023-10-08T20:00:40.1188379	Global Loot Modifiers : cornucopia
+0f536af19129a2e248a623f98bdfc0459b1b3916 data/cornucopia/loot_modifiers/canned_apple_mineshaft.json
+e6d460d16f2473a6aafc764fce0010e72440e2e4 data/cornucopia/loot_modifiers/canned_melon_mineshaft.json
+3f5ac4e40ea33aae4a396104b45571f9afc06b1c data/cornucopia/loot_modifiers/canned_pumpkin_mineshaft.json
+8c25fe47f975cd869b19d7e458cc9391653d733b data/forge/loot_modifiers/global_loot_modifiers.json

@@ -37,7 +37,7 @@ public class FlammableRotatedPillarBlockInit extends RotatedPillarBlock {
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
         if(context.getItemInHand().getItem() instanceof AxeItem) {
             if(state.is(BlockInit.MAPLE_LOG.get())) {
-                return Blocks.ACACIA_LOG.defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+                return BlockInit.STRIPPED_MAPLE_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
 
             if(state.is(BlockInit.MAPLE_LOG.get())) {
