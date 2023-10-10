@@ -25,11 +25,14 @@ public class BlockLootTablesInit extends BlockLootSubProvider {
         this.dropSelf(BlockInit.MAPLE_PLANKS.get());
         this.dropSelf(BlockInit.MAPLE_SAPLING.get());
         this.dropSelf(BlockInit.PUMPKILN_BRICKS.get());
+
         this.dropSelf(BlockInit.MOSSY_PUMPKILN_BRICKS.get());
         this.dropSelf(BlockInit.MOLDY_PUMPKILN_BRICKS.get());
         this.dropSelf(BlockInit.CRACKED_PUMPKILN_BRICKS.get());
         this.dropSelf(BlockInit.CHISELED_PUMPKILN_BRICKS.get());
         this.dropSelf(BlockInit.SMOOTH_PUMPKILN_BRICKS.get());
+
+        this.dropSelf(BlockInit.DEAD_ROSE.get());
 
         this.add(BlockInit.MAPLE_LEAVES.get(), block ->
                 createLeavesDrops(block, BlockInit.MAPLE_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

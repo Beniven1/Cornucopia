@@ -49,7 +49,7 @@ public class BiomeInit {
 
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacedFeaturesInit.MAPLE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacedFeaturesInit.MAPLE_PLACED_KEY); //I believe all custom features go here
 
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true)

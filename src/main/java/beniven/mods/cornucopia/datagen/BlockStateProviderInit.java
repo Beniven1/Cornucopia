@@ -23,6 +23,7 @@ public class BlockStateProviderInit extends BlockStateProvider {
         leavesBlock(BlockInit.MAPLE_LEAVES);
         logBlock(((RotatedPillarBlock) BlockInit.STRIPPED_MAPLE_LOG.get()));
         blockWithItem(BlockInit.MAPLE_PLANKS);
+
         blockWithItem(BlockInit.PUMPKILN_BRICKS);
         blockWithItem(BlockInit.CHISELED_PUMPKILN_BRICKS);
         blockWithItem(BlockInit.CRACKED_PUMPKILN_BRICKS);
@@ -32,6 +33,8 @@ public class BlockStateProviderInit extends BlockStateProvider {
 
         blockItem(BlockInit.MAPLE_LOG);
         blockItem(BlockInit.STRIPPED_MAPLE_LOG);
+
+        saplingBlock(BlockInit.DEAD_ROSE); //ik it's not a sapling, but I want it to use this renderer.
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

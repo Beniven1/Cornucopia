@@ -27,10 +27,14 @@ public class ItemModelProviderInit extends ItemModelProvider {
         simpleItem(ItemInit.MELON_PIE);
         simpleItem(ItemInit.CORNUCOPIA);
         simpleItem(ItemInit.CORNUCOPIA_CANNON);
+
+
         simpleBlockItem(BlockInit.MAPLE_PLANKS);
         simpleBlockItem(BlockInit.MAPLE_LOG);
         simpleBlockItem(BlockInit.STRIPPED_MAPLE_LOG);
         simpleItemLikeBlock(BlockInit.MAPLE_SAPLING);
+
+
         simpleBlockItem(BlockInit.PUMPKILN_BRICKS);
         simpleBlockItem(BlockInit.CHISELED_PUMPKILN_BRICKS);
         simpleBlockItem(BlockInit.MOLDY_PUMPKILN_BRICKS);
@@ -44,6 +48,8 @@ public class ItemModelProviderInit extends ItemModelProvider {
         handheldItem(ItemInit.PUMPKILN_SHOVEL);
         handheldItem(ItemInit.PUMPKILN_AXE);
         handheldItem(ItemInit.PUMPKILN_HOE);
+
+        simpleItemLikeBlock(BlockInit.DEAD_ROSE);
     }
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
