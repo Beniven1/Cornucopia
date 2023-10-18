@@ -55,6 +55,15 @@ public class RecipeProviderInit extends RecipeProvider implements IConditionBuil
                         of(ItemInit.CANNED_PUMPKIN.get()).build()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.CAN.get(), 1)
+                .pattern(" A ")
+                .pattern("A A")
+                .pattern(" A ")
+                .define('A', Items.IRON_NUGGET)
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(Items.IRON_NUGGET).build()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ItemInit.CANNED_PUMPKIN.get())
                 .requires(ItemInit.CAN.get()).requires(Blocks.PUMPKIN)
                 .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item().
@@ -68,9 +77,21 @@ public class RecipeProviderInit extends RecipeProvider implements IConditionBuil
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ItemInit.CANNED_MELON.get())
-                .requires(ItemInit.CAN.get()).requires(Items.MELON)
+                .requires(ItemInit.CAN.get()).requires(Items.MELON_SLICE)
                 .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item().
                         of(ItemInit.CAN.get()).build()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.BLACK_DYE)
+                .requires(BlockInit.DEAD_ROSE.get()).requires(BlockInit.DEAD_ROSE.get())
+                .unlockedBy("has_dead_rose", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(BlockInit.DEAD_ROSE.get()).build()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.RED_DYE)
+                .requires(BlockInit.DEAD_ROSE.get())
+                .unlockedBy("has_dead_rose", inventoryTrigger(ItemPredicate.Builder.item().
+                        of(BlockInit.DEAD_ROSE.get()).build()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, BlockInit.MAPLE_PLANKS.get(), 4)

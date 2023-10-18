@@ -32,6 +32,8 @@ public class BlockStateProviderInit extends BlockStateProvider {
 
         blockItem(BlockInit.MAPLE_LOG);
         blockItem(BlockInit.STRIPPED_MAPLE_LOG);
+
+        saplingBlock(BlockInit.DEAD_ROSE);  //It's not a sapling, but uses the same renderer.
     }
 
     private void saplingBlock(RegistryObject<Block> blockRegistryObject) {

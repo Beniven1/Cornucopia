@@ -31,6 +31,14 @@ import java.util.List;
 public class ConfiguredFeaturesInit {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MAPLE_KEY = registerKey("maple");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DEAD_ROSE_KEY = registerKey("dead_rose");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ROSE_KEY = registerKey("rose");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TULIP_KEY = registerKey("tulip");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> FARM_KEY = registerKey("farm");
+
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
         register(context, MAPLE_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -39,6 +47,18 @@ public class ConfiguredFeaturesInit {
                 BlockStateProvider.simple(BlockInit.MAPLE_LEAVES.get()),
                 new MapleFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
                 new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).build());
+
+        register(context, DEAD_ROSE_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(BlockInit.DEAD_ROSE.get())))));
+
+        register(context, ROSE_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.POPPY)))));
+
+        register(context, TULIP_KEY, Feature.FLOWER,
+                new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(Blocks.ORANGE_TULIP)))));
     }
 
 

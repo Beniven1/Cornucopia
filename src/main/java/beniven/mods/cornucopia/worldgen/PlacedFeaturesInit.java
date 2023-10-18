@@ -17,6 +17,14 @@ import java.util.List;
 public class PlacedFeaturesInit {
     public static final ResourceKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple_placed");
 
+    public static final ResourceKey<PlacedFeature> DEAD_ROSE_PLACED_KEY = registerKey("dead_rose_placed");
+
+    public static final ResourceKey<PlacedFeature> ROSE_PLACED_KEY = registerKey("rose_placed");
+
+    public static final ResourceKey<PlacedFeature> TULIP_PLACED_KEY = registerKey("tulip_placed");
+
+    public static final ResourceKey<PlacedFeature> FARM_PLACED_KEY = registerKey("farm_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -24,6 +32,15 @@ public class PlacedFeaturesInit {
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(3, 0.1f, 2),
                         BlockInit.MAPLE_SAPLING.get()));
 
+
+        register(context, DEAD_ROSE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.DEAD_ROSE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, ROSE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.ROSE_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+
+        register(context, TULIP_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.TULIP_KEY),
+                List.of(RarityFilter.onAverageOnceEvery(16), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
     }
 
 

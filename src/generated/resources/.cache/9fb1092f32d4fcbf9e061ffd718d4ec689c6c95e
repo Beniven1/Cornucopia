@@ -1,5 +1,6 @@
-// 1.20.1	2023-10-08T20:47:56.7798443	Recipes
+// 1.20.1	2023-10-12T20:42:04.2515432	Recipes
 4944927ea10f5762bd27a1415cf4d84dcdaac617 data/cornucopia/advancements/recipes/misc/apple_pie.json
+d91807ab7eabd3ab8cbf74706d50e17fc8141963 data/cornucopia/advancements/recipes/misc/can.json
 3757d5a068cf915a2d51e848dcb34455ad566c71 data/cornucopia/advancements/recipes/misc/canned_apple.json
 197d1c62c9a37bda44effd2e0e41847496ca4703 data/cornucopia/advancements/recipes/misc/canned_melon.json
 a7db6a1e1dc34feb3e6f87cc9a27fa1dfa1ee9eb data/cornucopia/advancements/recipes/misc/canned_pumpkin.json
@@ -21,8 +22,9 @@ ddf25a86f670f99b841592f79c1bd03eaf071e80 data/cornucopia/advancements/recipes/mi
 8a9e4e84c37430390d45df5fee003ef237e3cdc9 data/cornucopia/advancements/recipes/misc/smooth_pumpkiln_bricks_from_blasting_pumpkiln_bricks.json
 3f5aacea868f91dc5e905bd957e7dbfae2fef962 data/cornucopia/advancements/recipes/misc/smooth_pumpkiln_bricks_from_smelting_pumpkiln_bricks.json
 1118c65888e1693340c67888bf6ffaf846e17a8f data/cornucopia/recipes/apple_pie.json
+5bb6f3415a9ece950ef2cbd507ee4967a67ecd82 data/cornucopia/recipes/can.json
 1a99d1e44878d269340f0b9f273afa2efb3bc12c data/cornucopia/recipes/canned_apple.json
-b5594a0dcfe1892849d9cda7a69cac5bbfb1124f data/cornucopia/recipes/canned_melon.json
+c025174596c2d6766c680c2a990aace2371ae2f3 data/cornucopia/recipes/canned_melon.json
 d1343462f0b711a2cd5e439c371a1f1d9b0eced1 data/cornucopia/recipes/canned_pumpkin.json
 9b45d84df9006986abac2ea0213522455e6a0219 data/cornucopia/recipes/chiseled_pumpkiln_bricks.json
 014184f216b07650ac4261dc017a394d9af17b10 data/cornucopia/recipes/cornucopia.json
@@ -41,3 +43,7 @@ aa200132b4d0301fef12ea7a6a31d647a6d224fa data/cornucopia/recipes/pumpkiln_pickax
 9766253d80c42e44451f771947bd962c84c96020 data/cornucopia/recipes/pumpkiln_sword.json
 5b36921634a03dd30df2fe0a66321a8c83240889 data/cornucopia/recipes/smooth_pumpkiln_bricks_from_blasting_pumpkiln_bricks.json
 9cca519413777a0d4db18b99917e3fb991fd855d data/cornucopia/recipes/smooth_pumpkiln_bricks_from_smelting_pumpkiln_bricks.json
+a701c2f138f3d7e1fdf496d7de8424e538032784 data/minecraft/advancements/recipes/misc/black_dye.json
+99611673ac5da97941bbd1a1f69be43feddd20fb data/minecraft/advancements/recipes/misc/red_dye.json
+96feab39c1b4f69d981c2a8c719f7d89295ac9c5 data/minecraft/recipes/black_dye.json
+da887ae64f951cb03153b4e02b8dfff973cccf5f data/minecraft/recipes/red_dye.json

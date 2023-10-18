@@ -3,6 +3,7 @@ package beniven.mods.cornucopia.blocks;
 import beniven.mods.cornucopia.cornucopia;
 import beniven.mods.cornucopia.items.ItemInit;
 import beniven.mods.cornucopia.worldgen.tree.MapleTreeGrower;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -17,6 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -88,6 +90,16 @@ public class BlockInit {
 
     public static final RegistryObject<Block> SMOOTH_PUMPKILN_BRICKS = registerBlock("smooth_pumpkiln_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
+
+    public static final RegistryObject<Block> DEAD_ROSE = registerBlock("dead_rose",
+            () -> new FlowerBlock(MobEffects.BAD_OMEN, 10, BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .noCollission()
+                    .instabreak()
+                    .sound(SoundType.SOUL_SAND)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
