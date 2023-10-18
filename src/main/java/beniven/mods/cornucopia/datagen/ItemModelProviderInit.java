@@ -31,7 +31,6 @@ public class ItemModelProviderInit extends ItemModelProvider {
         simpleBlockItem(BlockInit.MAPLE_LOG);
         simpleBlockItem(BlockInit.STRIPPED_MAPLE_LOG);
         simpleItemLikeBlock(BlockInit.MAPLE_SAPLING);
-        simpleItemLikeBlock(BlockInit.DEAD_ROSE);
         simpleBlockItem(BlockInit.PUMPKILN_BRICKS);
         simpleBlockItem(BlockInit.CHISELED_PUMPKILN_BRICKS);
         simpleBlockItem(BlockInit.MOLDY_PUMPKILN_BRICKS);

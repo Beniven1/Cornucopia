@@ -37,6 +37,14 @@ public class BlockInit {
     public static final RegistryObject<Block> MAPLE_SAPLING = registerBlock("maple_sapling",
             () -> new SaplingBlockInit(new MapleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> DEAD_ROSE = registerBlock("dead_rose",
+            () -> new FlowerBlock(MobEffects.CONFUSION, 5, BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT)
+                    .noCollission()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .offsetType(BlockBehaviour.OffsetType.XZ)
+                    .pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> MAPLE_PLANKS = registerBlock("maple_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
                 @Override
