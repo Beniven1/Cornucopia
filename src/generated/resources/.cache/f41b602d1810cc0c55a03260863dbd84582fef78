@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-12T19:53:51.7222971	Item Models: cornucopia
+// 1.20.1	2023-10-22T18:22:04.8934152	Item Models: cornucopia
 376d5da561113b267f09d64da249b6630b828b8e assets/cornucopia/models/item/apple_pie.json
 079b7232e722003b29abe9ea6be82a55938bf4d1 assets/cornucopia/models/item/can.json
 6367388ff0a45120d5a9aa6074eb133faa176c15 assets/cornucopia/models/item/canned_apple.json
@@ -8,7 +8,6 @@ dc9917aa6dcf20022abf67820e61c0b8d21fdabf assets/cornucopia/models/item/chiseled_
 416670a3428c47a6740f06449f18a6e45362cd48 assets/cornucopia/models/item/cornucopia.json
 6eae2565071dcf95e1e4ade4a32dd39553a5f9a8 assets/cornucopia/models/item/cornucopia_cannon.json
 8b3f08604045b96afb0ad0f45abbf8ee95302f80 assets/cornucopia/models/item/cracked_pumpkiln_bricks.json
-fa43086347647eda0db94316d320c61cceda2bee assets/cornucopia/models/item/dead_rose.json
 3e65a0405815366ec2f148962897112a3943864f assets/cornucopia/models/item/maple_log.json
 a64e9643fafd4cf497e478ac75071cb763010ce3 assets/cornucopia/models/item/maple_planks.json
 0a2e5d3e0ef44567396c3ab0757118471ebc61d8 assets/cornucopia/models/item/maple_sapling.json

@@ -20,7 +20,7 @@ public class OverworldRegionInit extends Region {
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint,
             ResourceKey<Biome>>> mapper) {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.PLAINS, BiomeInit.HAUNTED_MEADOWS);
+            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.BIRCH_FOREST, BiomeInit.HAUNTED_MEADOWS);
         });
     }
 }
