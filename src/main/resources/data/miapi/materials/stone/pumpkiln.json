@@ -1,0 +1,28 @@
+{
+  "key": "stone_pumpkiln_bricks",
+  "translation": "cornucopia.material.stone.pumpkiln_bricks",
+  "icon": "cornucopia/textures/block/pumpkiln_bricks.png",
+  "groups": [],
+  "hardness": 4,
+  "density": 3,
+  "flexibility": 0,
+  "durability": 131,
+  "color": "F57F06",
+  "color_palette": {
+    "type": "grayscale_map",
+    "colors": {
+      "150": "F57F06"
+    }
+  },
+  "mining_speed": 4,
+  "mining_level": 1,
+  "textures": [
+    "rough"
+  ],
+  "items": [
+    {
+      "item": "cornucopia:pumpkiln_bricks",
+      "value": 1.0
+    }
+  ]
+}
