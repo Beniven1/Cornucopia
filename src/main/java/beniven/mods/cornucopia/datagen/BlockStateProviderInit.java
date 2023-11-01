@@ -20,6 +20,9 @@ public class BlockStateProviderInit extends BlockStateProvider {
     protected void registerStatesAndModels() {
         logBlock(((RotatedPillarBlock) BlockInit.MAPLE_LOG.get()));
         saplingBlock(BlockInit.MAPLE_SAPLING);
+
+        saplingBlock(BlockInit.DEAD_ROSE); //basically the same
+
         leavesBlock(BlockInit.MAPLE_LEAVES);
         logBlock(((RotatedPillarBlock) BlockInit.STRIPPED_MAPLE_LOG.get()));
         blockWithItem(BlockInit.MAPLE_PLANKS);

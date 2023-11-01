@@ -27,5 +27,7 @@
   "block.cornucopia.smooth_pumpkiln_bricks": "Smooth Pumpkiln Bricks",
   "painting.cornucopia.portal.title": "Portal",
   "biome.cornucopia.haunted_meadows": "Haunted Meadows",
-  "block.cornucopia.dead_rose": "Dead Rose"
+  "block.cornucopia.dead_rose": "Dead Rose",
+  "cornucopia.material.stone.pumpkiln_bricks": "Pumpkiln Bricks ",
+  "miapi.material.generated.block.cornucopia.maple_planks": "Maple Wood "
 }

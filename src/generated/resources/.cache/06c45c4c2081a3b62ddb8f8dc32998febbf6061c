@@ -1,6 +1,7 @@
-// 1.20.1	2023-10-22T18:22:04.9044075	Block States: cornucopia
+// 1.20.1	2023-10-30T19:04:44.8673982	Block States: cornucopia
 161fa80380ed8e7520248a1a50249e7d513122ac assets/cornucopia/blockstates/chiseled_pumpkiln_bricks.json
 d08536e0c130c36b48f91183047269224d393819 assets/cornucopia/blockstates/cracked_pumpkiln_bricks.json
+f4c710b82d8d53be7a11770f546cbd7e347ca8b6 assets/cornucopia/blockstates/dead_rose.json
 303d7d46c2e5e3f9606c00e76b44b5abd99a9691 assets/cornucopia/blockstates/maple_leaves.json
 548ad9c804975f02853e8fd4ec93eea853ae67f4 assets/cornucopia/blockstates/maple_log.json
 070f665374791f4fcd1323c1b4dd541ec776ed16 assets/cornucopia/blockstates/maple_planks.json
@@ -12,6 +13,7 @@ fd2f4d833f7674453f7668d53b7c5946b838341f assets/cornucopia/blockstates/smooth_pu
 2f3912abdd6e6d5d2da4ed27de203a91ab0a0544 assets/cornucopia/blockstates/stripped_maple_log.json
 e9aff1d6e7448e19950bf12b69f8a6c465ffe92d assets/cornucopia/models/block/chiseled_pumpkiln_bricks.json
 e30f0fba618868766299681f1dd9b8e74e5d9a77 assets/cornucopia/models/block/cracked_pumpkiln_bricks.json
+edc678fab4cbfa5bf2c18ecd6d91f7b6a9a53a59 assets/cornucopia/models/block/dead_rose.json
 0b558b1059a82da1419c7dbdccaf99a356235adf assets/cornucopia/models/block/maple_leaves.json
 12d67438a7981a70762dbc989bb8c84e6fed409c assets/cornucopia/models/block/maple_log.json
 9fd96d365dbdd23e10fa27e1901adc734e5e0c0b assets/cornucopia/models/block/maple_log_horizontal.json

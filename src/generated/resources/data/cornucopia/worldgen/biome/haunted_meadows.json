@@ -71,12 +71,12 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:forest_flowers",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "minecraft:patch_sugar_cane",
-      "minecraft:patch_pumpkin",
-      "cornucopia:maple_placed"
+      "cornucopia:maple_placed",
+      "cornucopia:tulip_placed",
+      "cornucopia:rose_placed",
+      "cornucopia:dead_rose_placed"
     ],
     [
       "minecraft:freeze_top_layer"
